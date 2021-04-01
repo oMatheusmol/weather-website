@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 2021
 
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -90,7 +91,7 @@ app.get('*', (req, res) => { //matchs everthing isnt in the website
 })
 
 
-app.listen(2021, () => {
+app.listen(port, () => {
     console.log('server is up')
-    console.log('http://localhost:2021')
+    console.log('http://localhost:'+port)
 })
