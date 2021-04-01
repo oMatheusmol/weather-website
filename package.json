@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2",
+    "rerequest": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
